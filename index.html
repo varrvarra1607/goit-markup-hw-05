@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
     <header id="header" class="header">
@@ -484,9 +483,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-subscribe-btn" type="submit">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div id="modal" class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg width="8" height="8">
