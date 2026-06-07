@@ -205,3 +205,8 @@
 .comment-field {
     margin-bottom: 16px;
 }
+@media screen and (max-width: 427px) {
+    .modal {
+        width: calc(100% - 36px);
+    }
+}
